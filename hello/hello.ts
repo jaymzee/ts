@@ -1,5 +1,4 @@
 import { promises as fs } from 'fs';
-//const fs = require('fs').promises;
 
 interface Person {
     firstName: string;
@@ -8,7 +7,7 @@ interface Person {
 
 class Student {
     constructor(public firstName: string, public lastName: string) {}
-    
+
     speak = (): void => { 
         console.log("I am " + this.firstName + ' ' + this.lastName) 
     };
@@ -66,11 +65,3 @@ doFileStuff();
 doAddStuff();
 doUserStuff();
 
-/*
-exports.Student = Student;
-exports.greet = greet;
-exports.add = add;
-exports.doAddStuff = doAddStuff;
-exports.doFileStuff = doFileStuff;
-exports.doUserStuff = doUserStuff;
-*/
